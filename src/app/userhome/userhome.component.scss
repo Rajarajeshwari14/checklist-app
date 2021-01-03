@@ -1,0 +1,57 @@
+.right-spacer{
+    flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary {
+    background: #2b78ca;
+    color: #fff;
+}
+.mat-button, .mat-raised-button{
+    background-color:rgb(255, 123, 0);
+} 
+
+.box1 {
+  border: solid 1px #006699;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+
+.textfield-1 {
+  width: 480px;
+  height: 36px;
+  margin-right: 20px;
+  font-size: 1.4em;
+  vertical-align: top;
+}
+
+.checkbox-1 {
+  width: 20px;
+  height: 20px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.button-2 {
+  height: 36px;
+  font-size: 1.1em;
+  vertical-align: top;
+  border: solid 1px #999;
+  border-radius: 2px;
+}
+
+.text-properties{
+  color: black;
+} 
+
+.delete-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-1{
+  background-color:rgb(7, 167, 34);
+  color: white;
+}

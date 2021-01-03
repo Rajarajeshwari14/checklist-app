@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>{{name}}'s to-do lists</span>
+    <span class="right-spacer"></span>
+    <button mat-raised-button (click)="logout()">Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br><br>
+<div>
+  <form (submit)="addTodo($event)">
+    <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="textfield-1" name="newTodo">
+    <button class="button-1" mat-raised-button type="submit" [disabled]="newTodo===''">Add Todo</button>
+  </form>
+</div>
+<ul>
+  <li *ngFor="let todo of todos; let i=index">
+    <span style="font-size: 120%; background: inherit;">{{ todo }}</span>
+    <span (click)="deleteTodo(i)" class="delete-icon"> <i class="material-icons">delete</i></span>
+  </li>
+</ul>
+
+<div class="mtop20">
+  <button mat-raised-button class="button-1" (click)="deleteAllTodos()">Delete All</button>
+  <br>
+</div>
